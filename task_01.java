@@ -19,6 +19,7 @@ public class task_01 {
         System.out.println("Введите число: "); 
         try{
             int a = get.nextInt();
+            System.out.println();
             get.close();
             return a;
         
