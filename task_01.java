@@ -34,7 +34,7 @@ public class task_01 {
 
 
     public static void printArr(double num) {
-        System.out.printf("Триугольное число равняется %.0f", num);
+        System.out.printf("Треугольное число равняется %.0f", num);
         
     }
 }
