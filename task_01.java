@@ -3,7 +3,7 @@ import java.util.InputMismatchException;
 import java.util.Scanner;
 
 
-public class task_01 {
+public class Task_01 {
     
     public static void main(String[] args) {
         double numb = getNumb();
@@ -14,15 +14,15 @@ public class task_01 {
     }
     //Ввод числа
     public static double getNumb() {
-        Scanner get = new Scanner(System.in);
+        Scanner Get = new Scanner(System.in);
         System.out.println("Введите число: "); 
         try{
-            double a = get.nextDouble();
+            double a = Get.nextDouble();
             System.out.println();
-            get.close();
+            Get.close();
             return a;
         } catch(InputMismatchException ex) {
-            get.close();
+            Get.close();
             System.out.println("Вы не ввели число");
         }
         return 0;
