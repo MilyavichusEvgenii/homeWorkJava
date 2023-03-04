@@ -14,19 +14,19 @@ public class Task201 {
 
     }
     private static int getNumb() {
-        Scanner Get = new Scanner(System.in);
+        Scanner get = new Scanner(System.in);
         try{
             System.out.println("Введите число параметра: 1 - name, 2 - country, 3 - city, 4 - age, 5 - all base");
-            int numb = Get.nextInt();
+            int numb = get.nextInt();
             return numb - 1;
         } catch (Exception ex){
             System.out.println("Вы не ввели число");
         } finally {
-            Get.close();
+            get.close();
         }
         return 0;
     }
-
+    //метод взаимодействия с пользователем
     private static int menuUser() {
         int a = getNumb();
         String name = "name";
@@ -54,7 +54,7 @@ public class Task201 {
         return result;
         
     }
-
+    //Считывание из файла и освобождение от лишних подстрок
     private static String readToString() {
         StringBuilder raw = new StringBuilder();
         String temp;
@@ -73,6 +73,7 @@ public class Task201 {
 
        return str;
     }
+    //Преобразование строки в массив
     private static String[][] stringToArray(String input) {
         String[] tempArr = input.split("}");
         String[][] doubleArr = new String[3][0];
@@ -83,6 +84,7 @@ public class Task201 {
         }
         return doubleArr;
     }
+    //Поисковик по заданным параметрам
     private static String searchInf(String[][] arr, int a) {
         StringBuilder res = new StringBuilder();
         if(a >= 0 && a <= 3){
@@ -103,7 +105,7 @@ public class Task201 {
             
         return res.toString();
     }
-
+    //Печать
     private static void print(String res) {
         System.out.println(res);
     }

@@ -12,6 +12,7 @@ class Task202 {
         System.out.println("Массив после перебора: ");
         print(resArr);
     }
+    //инициализация массива
     private static int[] initArr() {
         Random rnd = new Random();
         int[] arr = new int[20];
@@ -22,6 +23,7 @@ class Task202 {
         print(arr);
         return arr;
     }
+    //сортировка
     private static int[] selectArr(int[] array) {
         int temp;
         for (int i = 0; i < array.length - 1; i++) {
@@ -36,6 +38,7 @@ class Task202 {
         }
         return array;
     }
+    //логирование
     private static void logger(int[] arr) {
         String battary = "";
         for (int i = 0; i < arr.length; i++) {
@@ -56,6 +59,7 @@ class Task202 {
         
 
     }
+    //печать
     private static void print(int[] arr) {
         System.out.println(Arrays.toString(arr));
     }

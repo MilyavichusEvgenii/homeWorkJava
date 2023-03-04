@@ -1,0 +1,4 @@
+мар. 04, 2023 9:19:37 AM lesson_2.Task204 main
+WARNING: Логирование 1
+мар. 04, 2023 9:19:37 AM lesson_2.Task204 main
+INFO: Логирование 2
