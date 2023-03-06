@@ -60,6 +60,8 @@ class Task202 {
 
     }
     //печать
-    
+    private static void print(int[] arr) {
+        System.out.println(Arrays.toString(arr));
+    }
     
 }
