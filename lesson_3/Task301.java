@@ -41,6 +41,7 @@ public class Task301 {
     
         merge(a, l, r, mid, n - mid);
     }
+    //сортировка слиянием
     public static void merge(
         int[] a, int[] l, int[] r, int left, int right) {
  
@@ -60,6 +61,7 @@ public class Task301 {
             a[k++] = r[j++];
         }
     }
+    //печать
     private static void print(int[] arr) {
         System.out.println(Arrays.toString(arr));
     }
