@@ -21,6 +21,7 @@ public class Task401 {
         print(arr);
         return arr;
     }
+    //сортировка 
     public static void heapSort(int[] array) {
         if (array.length == 0) {
             return;
